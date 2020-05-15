@@ -1,0 +1,51 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "CanvasLayer",
+"class": "Hud2",
+"language": "NativeScript",
+"path": "res://HUD2.gdns"
+}, {
+"base": "Node2D",
+"class": "MainScript2",
+"language": "NativeScript",
+"path": "res://MainScript2.gdns"
+}, {
+"base": "RigidBody2D",
+"class": "Mob2",
+"language": "NativeScript",
+"path": "res://Mob2.gdns"
+}, {
+"base": "Area2D",
+"class": "Player2",
+"language": "NativeScript",
+"path": "res://Player2.gdns"
+} ]
+_global_script_class_icons={
+"Hud2": "res://HUD2.gdns",
+"MainScript2": "",
+"Mob2": "",
+"Player2": ""
+}
+
+[application]
+
+config/name="godot3-dodge-haskell"
+run/main_scene="res://MainScript2.tscn"
+
+[display]
+
+window/size/width=480
+window/size/height=720
+
+[gdnative]
+
+singletons=[  ]

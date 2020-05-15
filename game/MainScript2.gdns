@@ -1,0 +1,9 @@
+[gd_resource type="NativeScript" load_steps=2 format=2]
+
+[ext_resource path="res://lib/godot3-dodge-haskell.gdnlib" type="GDNativeLibrary" id=1]
+
+[resource]
+resource_name = "MainScript2"
+class_name = "MainScript2"
+library = ExtResource( 1 )
+script_class_name = "MainScript2"
