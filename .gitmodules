@@ -1,3 +1,6 @@
 [submodule "godot3_dodge"]
 	path = godot3_dodge
 	url = https://github.com/kidscancode/Godot3_dodge
+[submodule "Godot3_dodge"]
+	path = Godot3_dodge
+	url = https://github.com/kidscancode/Godot3_dodge
