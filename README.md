@@ -4,6 +4,8 @@ Make sure to use `git clone --recurse-submodules` to clone this repo. (so you ca
 
 Example of converting the YourFirstGame godot tutorial to Haskell with godot-haskell library.
 
+You can find the original tutorial here: https://docs.godotengine.org/en/3.2/getting_started/step_by_step/your_first_game.html
+
 # Quick Start
 
 1. Build the Haskell library
@@ -17,9 +19,18 @@ Example of converting the YourFirstGame godot tutorial to Haskell with godot-has
 
 4. Get a copy of Godot engine from Godot's website: https://godotengine.org/. This was tested with Godot version 3.2.1
 
-5. Run with Godot
+5. Add and make sure the generated .so/.dynlib/.dll is loaded correctly in Godot project. NOTE Godot may remove the signals / baseclasses of the GDNativeScript classes in project.godot during this step.  Make sure to add them back or it won't work.
+
+6. Run with Godot
 `Godot --path ./game`
 
-* NOTE you'll need to add and make sure .dynlib or .dll is loaded correctly in Godot project if not running on Windows. Only tested on Linux so far.
+* NOTE Only tested in Linux so far.
+
+# Structure
+- Haskell source is in src. 
+  - src/Lib.hs contains the Godot class exports.
+  - src/Util.hs contains Godot utility functions.
+  - files in src/NSClass contain the different NativeScript classes implemented in Haskell.
+- Godot files and assets are in game.
 
 
